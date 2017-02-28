@@ -15,6 +15,8 @@
 		F9A338D01E65E0DA00900801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A338CE1E65E0DA00900801 /* LaunchScreen.storyboard */; };
 		F9A338DB1E65E0DA00900801 /* _0_lecture_NotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A338DA1E65E0DA00900801 /* _0_lecture_NotificationTests.m */; };
 		F9A338E61E65E0DA00900801 /* _0_lecture_NotificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A338E51E65E0DA00900801 /* _0_lecture_NotificationUITests.m */; };
+		F9A338F51E65E4E100900801 /* Government.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A338F41E65E4E100900801 /* Government.m */; };
+		F9A338F81E65F57D00900801 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A338F71E65F57D00900801 /* Doctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F9A338E11E65E0DA00900801 /* 10_lecture-NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "10_lecture-NotificationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A338E51E65E0DA00900801 /* _0_lecture_NotificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0_lecture_NotificationUITests.m; sourceTree = "<group>"; };
 		F9A338E71E65E0DA00900801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A338F31E65E4E100900801 /* Government.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Government.h; sourceTree = "<group>"; };
+		F9A338F41E65E4E100900801 /* Government.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Government.m; sourceTree = "<group>"; };
+		F9A338F61E65F57D00900801 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		F9A338F71E65F57D00900801 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				F9A338C31E65E0DA00900801 /* AppDelegate.h */,
 				F9A338C41E65E0DA00900801 /* AppDelegate.m */,
+				F9A338F61E65F57D00900801 /* Doctor.h */,
+				F9A338F71E65F57D00900801 /* Doctor.m */,
+				F9A338F31E65E4E100900801 /* Government.h */,
+				F9A338F41E65E4E100900801 /* Government.m */,
 				F9A338C61E65E0DA00900801 /* ViewController.h */,
 				F9A338C71E65E0DA00900801 /* ViewController.m */,
 				F9A338C91E65E0DA00900801 /* Main.storyboard */,
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A338F51E65E4E100900801 /* Government.m in Sources */,
 				F9A338C81E65E0DA00900801 /* ViewController.m in Sources */,
 				F9A338C51E65E0DA00900801 /* AppDelegate.m in Sources */,
 				F9A338C21E65E0DA00900801 /* main.m in Sources */,
+				F9A338F81E65F57D00900801 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

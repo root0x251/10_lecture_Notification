@@ -7,18 +7,65 @@
 //
 
 #import "AppDelegate.h"
+#import "Government.h"
+#import "Doctor.h"
 
+// инкапсуляция
 @interface AppDelegate ()
-
+@property (strong, nonatomic) Government *government;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(governmentNotification:)
+                                                 name:GovernmentTaxLevelDidChangeNotification
+                                               object:nil];
+
+    
+    self.government = [Government new];
+    
+    
+    Doctor *doc1 = [Doctor new];
+    Doctor *doc2 = [Doctor new];
+    Doctor *doc3 = [Doctor new];
+
+    
+    doc1.salary = doc2.salary = doc3.salary = self.government.salary;
+    
+    self.government.taxLevel = 5.5f;
+    self.government.salary = 1111.2f;
+    self.government.pension = 500.4f;
+    self.government.averagePrice = 50.3f;
+    
+    self.government.salary = 1110.2f;
+
+    
     return YES;
 }
+
+- (void) governmentNotification: (NSNotification *) notification {
+    NSLog(@"governmentNotification userInfo = %@", notification.userInfo);
+}
+
+//
+//
+//
+//
+//
+//
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+//
+//
+//
+//
+//
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
